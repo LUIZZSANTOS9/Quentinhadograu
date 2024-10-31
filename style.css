@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/vetores-premium/moldura-de-comida-mexicana-em-fundo-preto-cozinha-mexicana-graficos-lineares-contorno-desenhado-a-mao_511024-1406.jpg?w=2000');
+    background-size: cover; /* Cobre toda a área do fundo */
+    background-position: center; /* Centraliza a imagem */
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0); /* Fundo branco semi-transparente para legibilidade */
+}
+
+header {
+    background-color: #d32f2f; /* Vermelho */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-section {
+    margin: 20px 0;
+}
+
+.menu-item {
+    background: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+    color: #b71c1c;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #d32f2f; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b71c1c; /* Vermelho mais escuro */
+}
+
+.cart-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #eaeaea;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+    position: relative;
+}
+
+img {
+    margin-top: 20px;
+    max-width: 100px; /* limite máximo da largura */
+    height: auto; /* mantém a proporção da imagem */
+}
+
+.menu-section h2 {
+    color: #d32f2f; /* Vermelho */
+}

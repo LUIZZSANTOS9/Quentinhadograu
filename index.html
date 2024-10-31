@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentinhas do Grau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Quentinhas do Grau</h1>
+            <nav>
+                <ul>
+                    <li><a href="sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section id="almoco" class="menu-section">
+                <h2>Almoço</h2>
+                <div class="menu-item">
+                    <img src="https://as1.ftcdn.net/v2/jpg/04/52/02/32/1000_F_452023294_GGha6a7JWrCz6pIJ8uAvtCa8VpiaySGy.jpg" alt="Arroz com Frango">
+                    <h3>Arroz com Frango</h3>
+                    <p>Delicioso prato com arroz soltinho e frango grelhado.</p>
+                    <button onclick="adicionarAoCarrinho('Arroz com Frango', 15)">Adicionar - R$15,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.6683772645c2864aed47bbc8c07d743f?rik=jNcsXbFKDq4dYQ&pid=ImgRaw&r=0" alt="Macarrão à Bolonhesa">
+                    <h3>Macarrão à Bolonhesa</h3>
+                    <p>Macarrão coberto com molho à bolonhesa, feito com carne moída.</p>
+                    <button onclick="adicionarAoCarrinho('Macarrão à Bolonhesa', 20)">Adicionar - R$20,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.7be2e6459f566414f5a6595674df0218?rik=9qAKeUWakokpRA&pid=ImgRaw&r=0" alt="Picanha com Farofa">
+                    <h3>Picanha com Farofa</h3>
+                    <p>Picanha suculenta acompanhada de farofa crocante.</p>
+                    <button onclick="adicionarAoCarrinho('Picanha com Farofa', 25)">Adicionar - R$25,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://uploads.metropoles.com/wp-content/uploads/2022/02/17174324/feijoada-do-vegan-se-1024x683.jpg" alt="Feijoada">
+                    <h3>Feijoada</h3>
+                    <p>Feijoada tradicional com carnes variadas e arroz.</p>
+                    <button onclick="adicionarAoCarrinho('Feijoada', 30)">Adicionar - R$30,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.fe2486714c258e0fc9263be2a0677c07?rik=GDS%2bHK9LdooIHw&pid=ImgRaw&r=0" alt="Bife à Milanesa">
+                    <h3>Bife à Milanesa</h3>
+                    <p>Bife empanado, crocante e saboroso.</p>
+                    <button onclick="adicionarAoCarrinho('Bife à Milanesa', 22)">Adicionar - R$22,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://receitasdocheff.com.br/wp-content/uploads/2020/01/images-123.jpg" alt="Tutu de Feijão">
+                    <h3>Tutu de Feijão</h3>
+                    <p>Tutu cremoso de feijão com torresmo.</p>
+                    <button onclick="adicionarAoCarrinho('Tutu de Feijão', 18)">Adicionar - R$18,00</button>
+                </div>
+            </section>
+
+            <section id="jantar" class="menu-section">
+                <h2>Jantar</h2>
+                <div class="menu-item">
+                    <img src="https://jupalma.com.br/wp-content/uploads/2020/09/receita-risoto-de-camarao-1140x760.png" alt="Risoto de Camarão">
+                    <h3>Risoto de Camarão</h3>
+                    <p>Risoto cremoso com camarões frescos e temperos especiais.</p>
+                    <button onclick="adicionarAoCarrinho('Risoto de Camarão', 35)">Adicionar - R$35,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.db6a38aac673d070f65d8e0f7676f1ea?rik=JLGdJx69jBxLgQ&pid=ImgRaw&r=0" alt="Lasagna de Berinjela">
+                    <h3>Lasagna de Berinjela</h3>
+                    <p>Lasanha recheada com berinjela e queijos.</p>
+                    <button onclick="adicionarAoCarrinho('Lasagna de Berinjela', 27)">Adicionar - R$27,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.costaoestenews.com/images/blog/large/file-mignon-com-molho-de-mostarda.jpg" alt="Filé Mignon com Molho de Mostarda">
+                    <h3>Filé Mignon com Molho de Mostarda</h3>
+                    <p>Filé mignon suculento acompanhado de molho de mostarda.</p>
+                    <button onclick="adicionarAoCarrinho('Filé Mignon com Molho de Mostarda', 40)">Adicionar - R$40,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://img.cybercook.com.br/receitas/113/frango-com-curry.jpeg" alt="Frango ao Curry">
+                    <h3>Frango ao Curry</h3>
+                    <p>Frango preparado com curry e leite de coco.</p>
+                    <button onclick="adicionarAoCarrinho('Frango ao Curry', 28)">Adicionar - R$28,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.2133a616f66ce9c37e311f37590a1189?rik=blLzilwAeTsTwg&pid=ImgRaw&r=0" alt="Camarão ao Alho">
+                    <h3>Camarão ao Alho</h3>
+                    <p>Camarões salteados com alho e ervas.</p>
+                    <button onclick="adicionarAoCarrinho('Camarão ao Alho', 32)">Adicionar - R$32,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.6e41000ff1c1b2d53000794fc7c169fd?rik=DkwuBt1zm6WdVA&riu=http%3a%2f%2fwww.amodadoflavio.pt%2fwp-content%2fuploads%2f2016%2f10%2fAA-BACALHAU-A-BRAS.jpg&ehk=uGBOAQozQzL3vk62y03vlLGXd2PXXX8DI%2fqo%2bktckro%3d&risl=&pid=ImgRaw&r=0" alt="Bacalhau à Brás">
+                    <h3>Bacalhau à Brás</h3>
+                    <p>Bacalhau desfiado com batatas e ovos.</p>
+                    <button onclick="adicionarAoCarrinho('Bacalhau à Brás', 45)">Adicionar - R$45,00</button>
+                </div>
+            </section>
+
+            <section id="bebidas" class="menu-section">
+                <h2>Bebidas</h2>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.6qqXSQ-AhARZf29UXmjqIwHaHa?rs=1&pid=ImgDetMain" alt="Corote">
+                    <h3>Corote</h3>
+                    <p>Bebida alcoólica saborosa e refrescante.</p>
+                    <button onclick="adicionarAoCarrinho('Corote', 10)">Adicionar - R$10,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.2fab935cf4858e1e54fdc5065ffb8c84?rik=tUptRojnFwTfWg&pid=ImgRaw&r=0" alt="Cachaça 51">
+                    <h3>Cachaça 51</h3>
+                    <p>Cachaça tradicional, perfeita para caipirinhas.</p>
+                    <button onclick="adicionarAoCarrinho('Cachaça 51', 20)">Adicionar - R$20,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.MFvelwkRjkc4hCIceL877wHaFj?rs=1&pid=ImgDetMain" alt="Budweiser">
+                    <h3>Budweiser</h3>
+                    <p>Cerveja leve e refrescante, ideal para qualquer ocasião.</p>
+                    <button onclick="adicionarAoCarrinho('Budweiser', 15)">Adicionar - R$15,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://static.paodeacucar.com/img/uploads/1/550/16774550.jpg" alt="Guaraná Antártica">
+                    <h3>Guaraná Antártica</h3>
+                    <p>Refrigerante refrescante com sabor de guaraná.</p>
+                    <button onclick="adicionarAoCarrinho('Guaraná Antártica', 8)">Adicionar - R$8,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/stores/001/043/122/products/cerveja-skol-600-ml1-c0692bb54601c9f20215676919052972-1024-1024.jpg" alt="Cerveja Skol">
+                    <h3>Cerveja Skol</h3>
+                    <p>Cerveja bem gelada para momentos de descontração.</p>
+                    <button onclick="adicionarAoCarrinho('Cerveja Skol', 12)">Adicionar - R$12,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.aeb5fa7a81c5d74c317c445edc4789e8?rik=r4DR6dhrMfHELg&pid=ImgRaw&r=0" alt="Água Mineral">
+                    <h3>Água Mineral</h3>
+                    <p>Água mineral natural, perfeita para acompanhar suas refeições.</p>
+                    <button onclick="adicionarAoCarrinho('Água Mineral', 5)">Adicionar - R$5,00</button>
+                </div>
+            </section>
+
+            <section id="sobremesas" class="menu-section">
+                <h2>Sobremesas</h2>
+                <div class="menu-item">
+                    <img src="https://s2.glbimg.com/K8OwZ9N2sE5DJltr-CALvxFBXNw=/0x0:633x391/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2015/09/22/10_19_02_409_Pudim.png" alt="Pudim">
+                    <h3>Pudim</h3>
+                    <p>Clássico pudim de leite condensado.</p>
+                    <button onclick="adicionarAoCarrinho('Pudim', 8)">Adicionar - R$8,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.MfTY0CrFjBVe3sFghLW1EAHaE8?rs=1&pid=ImgDetMain" alt="Torta de Limão">
+                    <h3>Torta de Limão</h3>
+                    <p>Torta refrescante de limão.</p>
+                    <button onclick="adicionarAoCarrinho('Torta de Limão', 10)">Adicionar - R$10,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.bCOjUPbY72t_P-Qroz4rXgHaE8?rs=1&pid=ImgDetMain" alt="Bolo de Chocolate">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>Delicioso bolo de chocolate com cobertura.</p>
+                    <button onclick="adicionarAoCarrinho('Bolo de Chocolate', 12)">Adicionar - R$12,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/OIP.zHZSmOf_X06ureBt84A-DgAAAA?rs=1&pid=ImgDetMain" alt="Gelado de Baunilha">
+                    <h3>Gelado de Baunilha</h3>
+                    <p>Gelado cremoso de baunilha, perfeito para refrescar.</p>
+                    <button onclick="adicionarAoCarrinho('Gelado de Baunilha', 9)">Adicionar - R$9,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.a30db865c7f7e8fecdd8402e88eca2e3?rik=C47VdBWh3B4a2w&pid=ImgRaw&r=0" alt="Pavê de Chocolate">
+                    <h3>Pavê de Chocolate</h3>
+                    <p>Pavê cremoso de chocolate, uma verdadeira tentação.</p>
+                    <button onclick="adicionarAoCarrinho('Pavê de Chocolate', 15)">Adicionar - R$15,00</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://th.bing.com/th/id/R.9120813f694a8e6eb996e73e20949083?rik=T%2bT%2bgyU4PHZ%2fbg&pid=ImgRaw&r=0" alt="Torta de Morango">
+                    <h3>Torta de Morango</h3>
+                    <p>Torta deliciosa com morangos frescos.</p>
+                    <button onclick="adicionarAoCarrinho('Torta de Morango', 13)">Adicionar - R$13,00</button>
+                </div>
+            </section>
+
+            <section id="carrinho" class="cart-section">
+                <h2>Carrinho de Compras</h2>
+                <ul id="lista-carrinho"></ul>
+                <p>Total: R$<span id="total">0</span></p>
+            
+                <h3>Método de Pagamento</h3>
+                <form id="form-pagamento" onsubmit="finalizarCompra(event)">
+                    <label for="nome-cartao">Nome no Cartão:</label>
+                    <input type="text" id="nome-cartao" required>
+                    <br>
+                    <label for="numero-cartao">Número do Cartão:</label>
+                    <input type="text" id="numero-cartao" required>
+                    <br>
+                    <label for="data-expiracao">Data de Expiração:</label>
+                    <input type="text" id="data-expiracao" placeholder="MM/AA" required>
+                    <br>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" required>
+                    <br>
+                    <button type="submit">Finalizar Compra</button>
+                </form>
+            </section>
+            
+            <script>
+                function finalizarCompra(event) {
+                    event.preventDefault(); // Impede o envio do formulário
+                    alert("Pagamento finalizado");
+                    // Aqui você pode adicionar mais lógica, como enviar os dados do formulário para um servidor
+                }
+            </script>
+            
+            <script src="main.js"></script>
+
+</body>
+</html>
